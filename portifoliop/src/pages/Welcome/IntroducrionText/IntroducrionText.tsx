@@ -14,7 +14,7 @@ const IntroducrionText = () => {
         className="absolute ml-[22rem] -mt-4 sm:h-[380px] h-[0px]"
       />
       <TitleOutlined text="Borba" />
-      <p className=" font-Special-Elite mt-4 sm:mt-12 mb-12 text-xl sm:text-2xl text-center sm:text-left whitespace-pre-line">
+      <p className=" font-Special-Elite mt-4 mb-16 text-xl sm:text-2xl text-center sm:text-left whitespace-pre-line">
         {`
         Hi, my name is Francisco Borba and I am a front-end
         developer with experience working on large scale
