@@ -8,6 +8,7 @@ const IntroducrionText = () => {
     <div className="flex sm:mr-28 flex-col">
       <TitleOutlined text="Francisco" />
       <img
+        alt="Geometric decoration"
         src={xDeco}
         width={"368"}
         height={"368"}

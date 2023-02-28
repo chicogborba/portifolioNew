@@ -1,15 +1,22 @@
 import React from "react";
-import picture from "../../assets/pictures/profile_picture.png";
+import picture from "../../assets/pictures/profile_picture.webp";
 import Tilt from "react-parallax-tilt";
 import IntroducrionText from "./IntroducrionText/IntroducrionText";
 import red_deco from "../../assets/red_deco.svg";
 
 const Introducrion = () => {
   return (
-    <div className="flex justify-center flex-row flex-wrap-reverse bg-[#22F2FF] w-screen h-auto p-16 border-b-[6px] border-black">
+    <div
+      className="
+    flex justify-center flex-row flex-wrap-reverse
+     bg-[#22F2FF] w-screen h-auto 
+     p-16 
+     border-b-[6px] border-black"
+    >
       <IntroducrionText />
       <div className="flex flex-col sm:mb-20 justify-center items-center">
         <img
+          alt="Geometric decoration"
           width="470"
           height="470"
           className="drop-shadow-[10px_10px_0px_rgba(0,0,0,1)] mt-56 ml-24 
@@ -18,10 +25,11 @@ const Introducrion = () => {
         />
         <div>
           <Tilt
+            gyroscope={true}
             transitionSpeed={300}
             trackOnWindow
             tiltReverse
-            perspective={1300}
+            perspective={1000}
           >
             <div
               className="bg-white xl:rotate-6 m-1 
@@ -29,6 +37,7 @@ const Introducrion = () => {
             w-fit h-fit px-5 sm:px-7 pt-7 sm:pb-8 pb-4"
             >
               <img
+                alt="Polaroid picture of Me"
                 data-tilt
                 src={picture}
                 width="320"
