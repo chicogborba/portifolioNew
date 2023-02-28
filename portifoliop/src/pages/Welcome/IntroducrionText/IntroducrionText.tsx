@@ -1,17 +1,28 @@
 import React from "react";
 import ButtonWithShadow from "../../../components/ButtonWithShadow";
 import TitleOutlined from "../../../components/TitleOutlined";
+import xDeco from "../../../assets/x_deco.svg";
 
 const IntroducrionText = () => {
   return (
-    <div className="flex-[2] flex flex-col">
+    <div className="flex sm:mr-28 flex-col">
       <TitleOutlined text="Francisco" />
+      <img
+        src={xDeco}
+        width={"368"}
+        height={"368"}
+        className="absolute ml-[22rem] -mt-4 sm:h-[380px] h-[0px]"
+      />
       <TitleOutlined text="Borba" />
-      <p className="font-Special-Elite mt-12 mb-12 text-xl sm:text-2xl text-center sm:text-left whitespace-pre-line">
+      <p className=" font-Special-Elite mt-4 sm:mt-12 mb-12 text-xl sm:text-2xl text-center sm:text-left whitespace-pre-line">
         {`
-        Hi, my name is Francisco Borba and I am a front-end developer with experience working on large scale projects. 
+        Hi, my name is Francisco Borba and I am a front-end
+        developer with experience working on large scale
+        projects. 
         
-        I have a strong passion for UX/UI design and I am always looking for another challenge to further enhance my skills and knowledge.`}
+        I have a strong passion for UX/UI design and I am
+        always looking for another challenge to further
+        enhance my skills and knowledge.`}
       </p>
       <ButtonWithShadow text="Contact me" />
     </div>

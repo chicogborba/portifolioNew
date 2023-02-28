@@ -9,7 +9,7 @@ const TitleOutlined = ({ text }: { text: string }) => {
     <h1
       style={style}
       className={`text-[#C6B2EF] font-Jakarta text-center sm:text-left font-extrabold text-5xl sm:text-8xl tracking-widest
-       drop-shadow-[8px_8px_0px_rgba(0,0,0,1)] text-shadow-[8px_8px_0px_rgba(0,0,0,1)]`}
+       drop-shadow-[6px_6px_0px_rgba(0,0,0,1)] `}
     >
       {text}
     </h1>
