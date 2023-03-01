@@ -11,7 +11,7 @@ const WindowContainer = ({
   children,
 }: WindowContainerProps) => {
   return (
-    <div className="max-w-sm bg-white border-[3px] border-black rounded-lg">
+    <div className=" bg-white border-[3px] border-black rounded-lg">
       <WindowHeader headerTitle={headerTitle} headerColor={headerColor} />
       {children}
     </div>
