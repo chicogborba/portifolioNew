@@ -1,7 +1,7 @@
 import React from "react";
-import ButtonWithShadow from "../../../components/ButtonWithShadow";
-import TitleOutlined from "../../../components/TitleOutlined";
-import xDeco from "../../../assets/x_deco.svg";
+import ButtonWithShadow from "../../../../components/ButtonWithShadow";
+import TitleOutlined from "../../../../components/TitleOutlined";
+import xDeco from "../../../../assets/x_deco.svg";
 
 const IntroducrionText = () => {
   return (
@@ -15,7 +15,12 @@ const IntroducrionText = () => {
         className="absolute ml-[22rem] -mt-4 sm:h-[380px] h-[0px]"
       />
       <TitleOutlined text="Borba" />
-      <p className=" font-Special-Elite mt-4 mb-16 text-xl sm:text-2xl text-center sm:text-left whitespace-pre-line">
+      <p
+        className="
+      font-Special-Elite text-xl text-center
+      sm:text-2xl sm:text-left whitespace-pre-line 
+      mt-4 mb-16"
+      >
         {`
         Hi, my name is Francisco Borba and I am a front-end
         developer with experience working on large scale
