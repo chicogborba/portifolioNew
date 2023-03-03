@@ -8,7 +8,7 @@ export interface TechCardProps {
 
 const TechCard = ({ selectedTechIndex }: TechCardProps) => {
   return (
-    <div className="relative">
+    <div className="relative h-fit w-fit">
       <div
         className="z-10 absolute
           w-full h-full 
@@ -27,8 +27,13 @@ const TechCard = ({ selectedTechIndex }: TechCardProps) => {
           headerTitle={list_of_techs[selectedTechIndex].name}
         >
           <div className="flex flex-col items-center">
-            {list_of_techs[selectedTechIndex].icon}
-            <div className="line-clamp-[9] font-Special-Elite text-lg sm:text-xl text-center mx-4 sm:mx-16 mb-8">
+            <div className="w-36 h-36 mb-4 mt-8">
+              {list_of_techs[selectedTechIndex].icon}
+            </div>
+            <div
+              className="line-clamp-[8] font-Special-Elite text-lg
+             sm:text-xl text-center mx-4 sm:mx-16 mb-8"
+            >
               {list_of_techs[selectedTechIndex].text}
             </div>
           </div>

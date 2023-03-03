@@ -13,7 +13,7 @@ export const list_of_techs: ListOfTechs = [
     name: "React",
     text: `
       A JavaScript library for building user interfaces. React allows developers to create reusable UI components and manage the state of their application.`,
-    icon: <FaReact className="w-36 h-36 mb-4 mt-8" />,
+    icon: <FaReact className="w-full h-full" />,
     color: "blue",
     id: 1,
   },
@@ -21,16 +21,16 @@ export const list_of_techs: ListOfTechs = [
     name: "Typescript",
     text: `
       A superset of JavaScript that adds optional static typing, allowing developers to catch errors earlier in the development process and write more maintainable code.`,
-    icon: <SiTypescript className="w-36 h-36 mb-4 mt-8" />,
+    icon: <SiTypescript className="w-full h-full" />,
     color: "darkBlue",
     id: 2,
   },
   {
-    name: "TailwindCSS",
+    name: "Tailwind",
     text: `
       A web-based platform for version control and collaboration. It allows developers to host and review code, manage projects, and build software alongside millions of other developers.
 `,
-    icon: <SiTailwindcss className="w-36 h-36 mb-4 mt-8" />,
+    icon: <SiTailwindcss className="w-full h-full" />,
     color: "blue",
     id: 3,
   },
@@ -41,7 +41,7 @@ A CSS framework that provides utility classes for building custom user interface
 
 
 `,
-    icon: <BsGithub className="w-36 h-36 mb-4 mt-8" />,
+    icon: <BsGithub className="w-full h-full" />,
     color: "blue",
     id: 4,
   },
@@ -52,18 +52,18 @@ A CSS framework that provides utility classes for building custom user interface
       It provides a sandbox environment for building, documenting, and testing
       components independently of the larger application. 
 `,
-    icon: <SiStorybook className="w-36 h-36 mb-4 mt-8" />,
+    icon: <SiStorybook className="w-full h-full" />,
     color: "blue",
     id: 5,
   },
   {
-    name: "Material-UI",
+    name: "MUI",
     text: `
       Material-UI is a component library that provides pre-designed UI components 
       following Google's Material Design guidelines for creating responsive and
       professional-looking interfaces. It includes theming and customization features.
 `,
-    icon: <SiMaterialui className="w-36 h-36 mb-4 mt-8" />,
+    icon: <SiMaterialui className="w-full h-full" />,
     color: "blue",
     id: 6,
   },
@@ -74,7 +74,7 @@ A CSS framework that provides utility classes for building custom user interface
       It includes features for optimized performance, easy deployment, and static 
       site generation, enabling developers to build modern web applications with ease.
 `,
-    icon: <TbBrandNextjs className="w-36 h-36 mb-4 mt-8" />,
+    icon: <TbBrandNextjs className="w-full h-full" />,
     color: "blue",
     id: 7,
   },
@@ -85,7 +85,7 @@ A CSS framework that provides utility classes for building custom user interface
       readability, and versatility. It's widely used for web development, data analysis,
       machine learning, and more, and offers a large standard library.
 `,
-    icon: <TbBrandPython className="w-36 h-36 mb-4 mt-8" />,
+    icon: <TbBrandPython className="w-full h-full" />,
     color: "blue",
     id: 7,
   },
