@@ -54,7 +54,7 @@ const Techs = () => {
               flex justify-center items-center
               aspect-square              
               rounded-full p-6
-              bg-[#4EE7DE] border-[3px] border-black
+              bg-[#4EE7DE] border-[2px] border-black
               transition-all
               drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]
               group-hover:drop-shadow-[0px_0px_0px_rgba(0,0,0,1)]
@@ -67,7 +67,7 @@ const Techs = () => {
               z-10 -mt-5 py-1
               text-center font-Jakarta text-base 
               w-full
-              bg-white border-[3px] border-black rounded-lg
+              bg-white border-[2px] border-black rounded-lg
               transition-all
               drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]
               group-hover:drop-shadow-[0px_0px_0px_rgba(0,0,0,1)]
