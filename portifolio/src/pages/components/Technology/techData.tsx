@@ -12,9 +12,7 @@ export const list_of_techs: ListOfTechs = [
   {
     name: "React",
     text: `
-      React is a declarative, efficient, and flexible JavaScript library
-      for building user interfaces. It lets you compose complex UIs from
-      small and isolated pieces of code called “components”.`,
+      A JavaScript library for building user interfaces. React allows developers to create reusable UI components and manage the state of their application.`,
     icon: <FaReact className="w-36 h-36 mb-4 mt-8" />,
     color: "blue",
     id: 1,
@@ -22,30 +20,26 @@ export const list_of_techs: ListOfTechs = [
   {
     name: "Typescript",
     text: `
-      TypeScript is a versatile, efficient, and flexible superset of JavaScript
-      that enables developers to build sophisticated and robust user interfaces.
-      By adding optional static typing and advanced features to JavaScript`,
-    icon: <SiTypescript className="w-28 h-28 mb-6 mt-10" />,
+      A superset of JavaScript that adds optional static typing, allowing developers to catch errors earlier in the development process and write more maintainable code.`,
+    icon: <SiTypescript className="w-36 h-36 mb-4 mt-8" />,
     color: "darkBlue",
     id: 2,
   },
   {
     name: "TailwindCSS",
     text: `
-      Tailwind CSS is a popular CSS framework with pre-designed classes for
-      building responsive interfaces. It reduces CSS code by providing flexible,
-      low-level utility classes and includes responsive design options.
+      A web-based platform for version control and collaboration. It allows developers to host and review code, manage projects, and build software alongside millions of other developers.
 `,
-    icon: <SiTailwindcss className="w-28 h-28 mb-6 mt-10" />,
+    icon: <SiTailwindcss className="w-36 h-36 mb-4 mt-8" />,
     color: "blue",
     id: 3,
   },
   {
     name: "Git",
     text: `
-      Git is a version control system for tracking code changes over time,
-      allowing multiple developers to work on the same codebase and merge changes.
-      It includes features for collaborating, reverting changes, and reviewing history.
+A CSS framework that provides utility classes for building custom user interfaces quickly and efficiently. With Tailwind, developers can focus on writing HTML and let the framework handle the styling.
+
+
 `,
     icon: <BsGithub className="w-36 h-36 mb-4 mt-8" />,
     color: "blue",
@@ -80,7 +74,7 @@ export const list_of_techs: ListOfTechs = [
       It includes features for optimized performance, easy deployment, and static 
       site generation, enabling developers to build modern web applications with ease.
 `,
-    icon: <TbBrandNextjs className="w-48 h-48 mb-2 mt-6" />,
+    icon: <TbBrandNextjs className="w-36 h-36 mb-4 mt-8" />,
     color: "blue",
     id: 7,
   },
@@ -91,7 +85,7 @@ export const list_of_techs: ListOfTechs = [
       readability, and versatility. It's widely used for web development, data analysis,
       machine learning, and more, and offers a large standard library.
 `,
-    icon: <TbBrandPython className="w-48 h-48 mb-2 mt-6" />,
+    icon: <TbBrandPython className="w-36 h-36 mb-4 mt-8" />,
     color: "blue",
     id: 7,
   },
