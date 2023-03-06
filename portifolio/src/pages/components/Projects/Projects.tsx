@@ -9,7 +9,7 @@ const Projects = () => {
     <div
       className="
     flex justify-center flex-col flex-wrap-reverse
-     bg-[#FFDD22] w-screen h-auto 
+     bg-[#FFDD22] w-full h-auto 
      border-b-[6px] border-black
      pb-16"
     >

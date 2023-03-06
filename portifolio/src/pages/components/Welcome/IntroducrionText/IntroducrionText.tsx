@@ -13,7 +13,7 @@ const IntroducrionText = () => {
         src={xDeco}
         width={"368"}
         height={"368"}
-        className="absolute ml-[22rem] -mt-4 sm:h-[380px] h-[0px]"
+        className="absolute ml-[22rem] -mt-4 lg:h-[380px] h-[0px]"
       />
       <TitleOutlined text="Borba" />
       <p
@@ -27,7 +27,7 @@ const IntroducrionText = () => {
         developer with experience working on large scale
         projects. 
         
-        I have a strong passion for UX/UI design and I am
+        I have a strong passion for UX/UI design and
         always looking for another challenge to further
         enhance my skills and knowledge.`}
       </p>

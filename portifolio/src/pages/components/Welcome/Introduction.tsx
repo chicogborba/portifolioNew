@@ -9,17 +9,18 @@ const Introducrion = () => {
     <div
       className="
     flex justify-center flex-row flex-wrap-reverse
-     bg-[#22F2FF] w-screen h-auto 
+    overflow-hidden
+     bg-[#22F2FF] w-full h-auto 
      p-16 
      border-b-[6px] border-black"
     >
       <IntroducrionText />
-      <div className="flex flex-col sm:mb-20 justify-center items-center">
+      <div className=" relative flex flex-col sm:mb-20 justify-center items-center">
         <img
           alt="Geometric decoration"
           width="470"
           height="470"
-          className="drop-shadow-[10px_10px_0px_rgba(0,0,0,1)] mt-56 ml-24 
+          className="drop-shadow-[10px_10px_0px_rgba(0,0,0,1)] left-20 top-40
           h-[0px] sm:h-[370px] xl:h-[450px] absolute sm:animate-spin-slow"
           src={red_deco}
         />

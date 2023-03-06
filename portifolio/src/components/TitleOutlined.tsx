@@ -5,6 +5,7 @@ export interface TitleOutlinedProps {
   size?: keyof TextSizes;
   color?: keyof TextColors;
   align?: "left" | "center";
+  subtitle?: string;
 }
 
 type TextColors = {
@@ -19,9 +20,15 @@ type TextSizes = {
   large: string;
 };
 
-const TitleOutlined = ({ text, size, color, align }: TitleOutlinedProps) => {
+const TitleOutlined = ({
+  text,
+  size,
+  color,
+  align,
+  subtitle,
+}: TitleOutlinedProps) => {
   //Define the alignment of the text DEFAULT: left
-  const selectedAlign = align ? "sm:text-" + align : "sm:text-left";
+  const selectedAlign = align ? "md:text-" + align : "sm:text-left";
 
   //Define the size of the text DEFAULT: large
   const selectedSize = size || "large";
@@ -46,18 +53,25 @@ const TitleOutlined = ({ text, size, color, align }: TitleOutlinedProps) => {
   };
 
   return (
-    <h1
-      style={style}
-      className={`
-       ${textColors[selectedColor]} 
-       ${textSizes[selectedSize]}
-       ${selectedAlign}
-       font-Jakarta font-extrabold
-       text-center tracking-widest
+    <>
+      <h1
+        style={style}
+        className={`
+      ${textColors[selectedColor]} 
+      ${textSizes[selectedSize]}
+      ${selectedAlign}
+      font-Jakarta font-extrabold
+      text-center tracking-widest
       `}
-    >
-      {text}
-    </h1>
+      >
+        {text}
+      </h1>
+      {subtitle && (
+        <h6 className="font-Special-Elite text-center mt-3 text-2xl">
+          {subtitle}
+        </h6>
+      )}
+    </>
   );
 };
 
