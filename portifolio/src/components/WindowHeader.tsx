@@ -7,26 +7,19 @@ export type Colors = {
 
 export interface WindowHeaderProps {
   headerTitle: string;
-  headerColor: HeaderColors;
+  headerColor: string;
 }
 
-export type HeaderColors = keyof Colors;
-
 const WindowHeader = ({ headerTitle, headerColor }: WindowHeaderProps) => {
-  const colors: Colors = {
-    blue: "bg-[#62DAFB]",
-    darkBlue: "bg-[#2F72BB]",
-  };
-
   return (
     <div
       className={`py-3 px-1 
-    ${colors[headerColor]} bg-opacity-75
+    ${headerColor} bg-opacity-75
     flex justify-between items-center
     rounded-t-[0.330rem] 
     border-b-[3px] border-black`}
     >
-      <div className="ml-4 font-Jakarta text-xl">{headerTitle}</div>
+      <div className="ml-4 font-Jakarta text-lg">{headerTitle}</div>
       <div className="flex">
         <div
           className="

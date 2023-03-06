@@ -2,6 +2,7 @@ import React from "react";
 import ButtonWithShadow from "../../../../components/ButtonWithShadow";
 import TitleOutlined from "../../../../components/TitleOutlined";
 import xDeco from "../../../../assets/x_deco.svg";
+import { BiPhoneCall } from "react-icons/bi";
 
 const IntroducrionText = () => {
   return (
@@ -30,7 +31,17 @@ const IntroducrionText = () => {
         always looking for another challenge to further
         enhance my skills and knowledge.`}
       </p>
-      <ButtonWithShadow text="Contact me" />
+      <ButtonWithShadow
+        text="Contact me"
+        animate
+        icon={
+          <BiPhoneCall
+            className="
+      w-6 stroke-1 self-center
+      inline-block mr-2"
+          />
+        }
+      />
     </div>
   );
 };

@@ -23,7 +23,7 @@ const TechCard = ({ selectedTechIndex }: TechCardProps) => {
       />
       <div className="z-20 max-w-sm relative">
         <WindowContainer
-          headerColor={list_of_techs[selectedTechIndex].color}
+          headerColor={list_of_techs[selectedTechIndex].bg_color}
           headerTitle={list_of_techs[selectedTechIndex].name}
         >
           <div className="flex flex-col items-center">

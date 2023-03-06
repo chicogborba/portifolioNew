@@ -1,21 +1,19 @@
-import React, { memo, useEffect } from "react";
-import WindowContainer from "../../../components/WindowContainer";
-import { FaReact } from "react-icons/fa";
-import { SiTypescript } from "react-icons/si";
-import { HeaderColors } from "../../../components/WindowHeader";
+import React, { memo } from "react";
 import { list_of_techs } from "./techData";
 import TechCard from "./components/TechCard";
 import TitleOutlined from "../../../components/TitleOutlined";
+import TechButtons from "./components/TechButtons";
+import purple_deco from "../../../assets/purple_deco.svg";
 
-export type tech = {
+export type Tech = {
   name: string;
   text: string;
   icon: JSX.Element;
-  color: HeaderColors;
+  bg_color: string;
   id: number;
 };
 
-export type ListOfTechs = tech[];
+export type ListOfTechs = Tech[];
 
 const Techs = () => {
   const [selectedTechIndex, setSelectedTechIndex] = React.useState(0);
@@ -28,7 +26,25 @@ const Techs = () => {
      gap-16
      "
     >
-      <TechCard selectedTechIndex={selectedTechIndex} />
+      <div className="mt-16 mb-20 mr-20">
+        <img
+          alt="Geometric decoration"
+          width="444"
+          height="335"
+          className="drop-shadow-[4px_4px_0px_rgba(0,0,0,1)] mt-52 -ml-20 
+          h-[0px] sm:h-[370px] xl:h-[450px] absolute"
+          src={purple_deco}
+        />
+        <img
+          alt="Geometric decoration"
+          width="444"
+          height="335"
+          className="drop-shadow-[4px_4px_0px_rgba(0,0,0,1)] -mt-32 ml-12 
+          h-[0px] sm:h-[370px] xl:h-[450px] absolute"
+          src={purple_deco}
+        />
+        <TechCard selectedTechIndex={selectedTechIndex} />
+      </div>
       <div className="sm:ml-8 flex flex-col justify-center">
         <TitleOutlined
           text="Main Techs"
@@ -36,48 +52,10 @@ const Techs = () => {
           size="medium"
           align="center"
         />
-        <div
-          className="mt-8 sm:mt-16 min-w-fit 
-        grid grid-cols-2 sm:grid-cols-4 gap-8"
-        >
-          {list_of_techs.map((tech, index) => (
-            <div
-              onClick={() => setSelectedTechIndex(index)}
-              className="flex flex-col 
-            cursor-pointer hover:scale-110 transition-all
-            group
-            "
-            >
-              <div
-                key={index}
-                className="
-              flex justify-center items-center
-              aspect-square              
-              rounded-full p-6
-              bg-[#4EE7DE] border-[2px] border-black
-              transition-all
-              drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]
-              group-hover:drop-shadow-[0px_0px_0px_rgba(0,0,0,1)]
-              "
-              >
-                <div className="w-10 h-10 sm:w-14 sm:h-14">{tech.icon}</div>
-              </div>
-              <div
-                className="
-              z-10 -mt-5 py-1
-              text-center font-Jakarta text-base 
-              w-full
-              bg-white border-[2px] border-black rounded-lg
-              transition-all
-              drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]
-              group-hover:drop-shadow-[0px_0px_0px_rgba(0,0,0,1)]
-              "
-              >
-                {tech.name}
-              </div>
-            </div>
-          ))}
-        </div>
+        <TechButtons
+          onTechClick={setSelectedTechIndex}
+          listOfTechs={list_of_techs}
+        />
       </div>
     </div>
   );
