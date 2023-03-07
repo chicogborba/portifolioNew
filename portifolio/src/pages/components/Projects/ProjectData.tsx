@@ -22,7 +22,7 @@ export const projectData = [
     bg_color: "bg-[#7BDFF5]",
   },
   {
-    name: "Backend",
+    name: "Backend API",
     icon: <RiPencilRuler2Line className="w-full h-full" />,
     bg_color: "bg-[#D6F57B]",
   },

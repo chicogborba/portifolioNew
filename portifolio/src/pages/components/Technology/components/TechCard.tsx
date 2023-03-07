@@ -8,15 +8,16 @@ export interface TechCardProps {
 }
 
 const TechCard = ({ selectedTechIndex }: TechCardProps) => {
+  // Used to show the previous card while the card change animation is happening
+  const [previusSelectedTechIndex, setPreviusSelectedTechIndex] =
+    useState(selectedTechIndex);
+
+  // Changing the scale of the decoration and the card on diferent order
   const [decoScales, setDecoScales] = useState([
     "scale-100",
     "scale-100",
     "scale-100",
   ]);
-
-  const [previusSelectedTechIndex, setPreviusSelectedTechIndex] =
-    useState(selectedTechIndex);
-
   useEffect(() => {
     setDecoScales(["scale-0", "scale-100", "scale-100"]);
     setTimeout(() => {
@@ -36,6 +37,7 @@ const TechCard = ({ selectedTechIndex }: TechCardProps) => {
       setDecoScales(["scale-100", "scale-100", "scale-100"]);
     }, 900);
   }, [selectedTechIndex]);
+
   return (
     <div className="mt-16 mb-20 xl:mr-32">
       <img
