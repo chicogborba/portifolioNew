@@ -1,8 +1,8 @@
 import React from "react";
-import picture from "../../../assets/pictures/profile_picture.webp";
+import picture from "../../../../assets/pictures/profile_picture.webp";
 import Tilt from "react-parallax-tilt";
-import IntroducrionText from "./IntroducrionText/IntroducrionText";
-import red_deco from "../../../assets/red_deco.svg";
+import IntroducrionText from "./IntroducrionText";
+import red_deco from "../../../../assets/red_deco.svg";
 
 const Introducrion = () => {
   return (

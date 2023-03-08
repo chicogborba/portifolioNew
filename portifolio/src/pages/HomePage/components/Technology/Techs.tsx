@@ -1,10 +1,7 @@
 import React, { memo } from "react";
 import { list_of_techs } from "./techData";
 import TechCard from "./components/TechCard";
-import TitleOutlined from "../../../components/TitleOutlined";
 import TechButtons from "./components/TechButtons";
-import purple_deco from "../../../assets/purple_deco.svg";
-import star_deco from "../../../assets/star_deco.svg";
 
 export type Tech = {
   name: string;

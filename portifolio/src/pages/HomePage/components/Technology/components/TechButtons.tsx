@@ -1,8 +1,8 @@
 import React, { memo } from "react";
-import TitleOutlined from "../../../../components/TitleOutlined";
-import { ListOfTechs } from "../Techs";
-import star_deco from "../../../../assets/star_deco.svg";
-import arrow_deco from "../../../../assets/arrow_deco.svg";
+import TitleOutlined from "../../../../../components/TitleOutlined";
+import { ListOfTechs } from "../../Technology/Techs";
+import star_deco from "../../../../../assets/star_deco.svg";
+import arrow_deco from "../../../../../assets/arrow_deco.svg";
 
 export interface TechButtonsProps {
   listOfTechs: ListOfTechs;

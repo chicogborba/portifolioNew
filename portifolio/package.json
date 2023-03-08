@@ -10,10 +10,16 @@
   },
   "dependencies": {
     "@tailwindcss/line-clamp": "^0.4.2",
+    "@types/react-helmet": "^6.1.6",
+    "localforage": "^1.10.0",
+    "match-sorter": "^6.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
     "react-icons": "^4.7.1",
-    "react-parallax-tilt": "^1.7.108"
+    "react-parallax-tilt": "^1.7.108",
+    "react-router-dom": "^6.8.2",
+    "sort-by": "^1.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",

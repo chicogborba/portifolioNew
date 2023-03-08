@@ -67,9 +67,9 @@ const TitleOutlined = ({
         {text}
       </h1>
       {subtitle && (
-        <h6 className="font-Special-Elite text-center mt-3 text-2xl">
+        <h2 className="font-Special-Elite text-center mt-3 text-2xl">
           {subtitle}
-        </h6>
+        </h2>
       )}
     </>
   );

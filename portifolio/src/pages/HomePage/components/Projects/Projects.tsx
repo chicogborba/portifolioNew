@@ -1,7 +1,7 @@
 import React from "react";
-import ButtonWithShadow from "../../../components/ButtonWithShadow";
-import TitleOutlined from "../../../components/TitleOutlined";
-import WindowContainer from "../../../components/WindowContainer";
+import ButtonWithShadow from "../../../../components/ButtonWithShadow";
+import TitleOutlined from "../../../../components/TitleOutlined";
+import WindowContainer from "../../../../components/WindowContainer";
 import { projectData } from "./ProjectData";
 
 const Projects = () => {

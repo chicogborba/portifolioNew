@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import WindowContainer from "../../../../components/WindowContainer";
+import WindowContainer from "../../../../../components/WindowContainer";
 import { list_of_techs } from "../techData";
-import purple_deco from "../../../../assets/purple_deco.svg";
+import purple_deco from "../../../../../assets/purple_deco.svg";
 
 export interface TechCardProps {
   selectedTechIndex: number;
