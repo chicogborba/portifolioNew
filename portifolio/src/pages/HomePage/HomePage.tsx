@@ -2,7 +2,7 @@ import React from "react";
 import Projects from "./components/Projects/Projects";
 import Techs from "./components/Technology/Techs";
 import Introducrion from "./components/Welcome/Introduction";
-import img from "../../assets/pictures/profile_picture.webp";
+import img from "../../assets/favicon.ico";
 import { Helmet } from "react-helmet-async";
 
 const HomePage = () => {
