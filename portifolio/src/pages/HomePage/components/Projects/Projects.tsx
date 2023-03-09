@@ -3,8 +3,16 @@ import ButtonWithShadow from "../../../../components/ButtonWithShadow";
 import TitleOutlined from "../../../../components/TitleOutlined";
 import WindowContainer from "../../../../components/WindowContainer";
 import { projectData } from "./ProjectData";
+import { useNavigate } from "react-router-dom";
 
 const Projects = () => {
+  // use navigate to redirect to another page reseting the scroll position
+  const navigate = useNavigate();
+
+  const handleProjectClick = () => {
+    navigate(`/project`);
+  };
+
   return (
     <div
       className="
@@ -35,7 +43,10 @@ const Projects = () => {
                 <div className="flex flex-col justify-center items-center">
                   <div className="w-44 h-44">{project.icon}</div>
                   <div className="mb-8">
-                    <ButtonWithShadow text="Read More" />
+                    <ButtonWithShadow
+                      onClick={handleProjectClick}
+                      text="Read More"
+                    />
                   </div>
                 </div>
               </WindowContainer>

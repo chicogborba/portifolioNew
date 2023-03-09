@@ -4,9 +4,15 @@ export interface ButtonWithShadowProps {
   text: string;
   animate?: boolean;
   icon?: JSX.Element;
+  onClick?: () => void;
 }
 
-const ButtonWithShadow = ({ text, animate, icon }: ButtonWithShadowProps) => {
+const ButtonWithShadow = ({
+  text,
+  animate,
+  icon,
+  onClick,
+}: ButtonWithShadowProps) => {
   const [isbuttonHovered, setisbuttonHovered] = React.useState(false);
   const verifyHover = async () => {
     setisbuttonHovered(true);
@@ -16,6 +22,7 @@ const ButtonWithShadow = ({ text, animate, icon }: ButtonWithShadowProps) => {
 
   return (
     <button
+      onClick={onClick}
       onMouseEnter={verifyHover}
       className={` 
       ${animation} 
