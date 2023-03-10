@@ -10,6 +10,7 @@ const HomePage = () => {
     <>
       <Helmet>
         <title>React Portfólio - Francisco Borba</title>
+        <meta name="title" content="React Portfólio - Francisco Borba" />
         <meta
           name="description"
           content="A neubrutalist portfólio for a web front-end developer "
