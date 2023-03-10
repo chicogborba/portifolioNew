@@ -12,7 +12,7 @@ export type UsedTech = {
 };
 
 export type ProjectData = {
-  id: number;
+  id: string;
   title: string;
   main_ideia: string;
   execution: string;
@@ -23,7 +23,7 @@ export type ProjectData = {
 
 export const projectData: ProjectData[] = [
   {
-    id: 1,
+    id: "1",
     title: "Portifolio",
     main_ideia:
       "A simple portifolio on a neubrutalist web design. Using  ReactJS and Tailwind",

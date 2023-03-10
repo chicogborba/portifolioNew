@@ -9,8 +9,8 @@ const Projects = () => {
   // use navigate to redirect to another page reseting the scroll position
   const navigate = useNavigate();
 
-  const handleProjectClick = () => {
-    navigate(`/project`);
+  const handleProjectClick = (projectID: string) => {
+    navigate(`/project/${projectID}`);
   };
 
   return (
@@ -44,7 +44,7 @@ const Projects = () => {
                   <div className="w-44 h-44">{project.icon}</div>
                   <div className="mb-8">
                     <ButtonWithShadow
-                      onClick={handleProjectClick}
+                      onClick={() => handleProjectClick(project.id)}
                       text="Read More"
                     />
                   </div>

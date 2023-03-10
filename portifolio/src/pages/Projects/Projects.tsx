@@ -3,13 +3,12 @@ import ShadowContainer from "./Components/ShadowContainer";
 import TitleOutlined from "../../components/TitleOutlined";
 
 import { projectData } from "./ProjectData";
+import { useParams } from "react-router-dom";
 
-export interface ProjectProps {
-  selectedID: number;
-}
+const Projects = () => {
+  let { ProjectId } = useParams();
 
-const Projects = ({ selectedID }: ProjectProps) => {
-  const project = projectData.find((project) => project.id === selectedID);
+  const project = projectData.find((project) => project.id === ProjectId);
 
   return (
     <>

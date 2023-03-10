@@ -8,15 +8,15 @@ import Projects from "./pages/Projects/Projects";
 import ScrollToTop from "./components/ScrollToTop";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-  <React.StrictMode>
-    <HelmetProvider>
+  <HelmetProvider>
+    <React.StrictMode>
       <BrowserRouter>
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/project" element={<Projects selectedID={1} />} />
+          <Route path="/project/:ProjectId" element={<Projects />} />
         </Routes>
       </BrowserRouter>
-    </HelmetProvider>
-  </React.StrictMode>
+    </React.StrictMode>
+  </HelmetProvider>
 );
