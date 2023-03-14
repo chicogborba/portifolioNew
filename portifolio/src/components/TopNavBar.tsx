@@ -13,26 +13,26 @@ const TopNavBar = () => {
     >
       <div
         onClick={() => navigate("/")}
-        className="flex gap-4 justify-center items-center hover:text-white hover:cursor-pointer transition-all"
+        className="flex sm:gap-4 gap-1 justify-center items-center hover:text-white hover:cursor-pointer transition-all"
       >
-        <BiPhoneCall className="h-10 w-10" />
-        <p className=" font-Jakarta text-xl">Contact me</p>
+        <BiPhoneCall className="sm:h-10 sm:w-10 w-6 h-6" />
+        <p className=" font-Jakarta sm:text-xl text-base">Contact me</p>
       </div>
-      <div className="border rounded-full border-black h-6 mx-8" />
+      <div className="border rounded-full border-black h-6 sm:mx-8 mx-3" />
       <div
         onClick={() => navigate("/")}
-        className="flex gap-4 justify-center items-center hover:text-white hover:cursor-pointer transition-all"
+        className="flex sm:gap-4 gap-1 justify-center items-center hover:text-white hover:cursor-pointer transition-all"
       >
-        <TbTool className="h-10 w-10" />
-        <p className=" font-Jakarta text-xl">Projects</p>
+        <TbTool className="sm:h-10 sm:w-10 w-6 h-6" />
+        <p className=" font-Jakarta sm:text-xl text-base">Projects</p>
       </div>
-      <div className="border rounded-full border-black h-6 mx-8" />
+      <div className="border rounded-full border-black h-6 sm:mx-8 mx-3" />
       <div
         onClick={() => navigate("/")}
-        className="flex gap-4 justify-center items-center hover:text-white hover:cursor-pointer transition-all"
+        className="flex sm:gap-4 gap-1 justify-center items-center hover:text-white hover:cursor-pointer transition-all"
       >
-        <HiOutlineHome className="h-10 w-10" />
-        <p className=" font-Jakarta text-xl">Home</p>
+        <HiOutlineHome className="sm:h-10 sm:w-10 w-6 h-6" />
+        <p className=" font-Jakarta sm:text-xl text-base">Home</p>
       </div>
     </div>
   );
