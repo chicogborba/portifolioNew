@@ -1,7 +1,7 @@
 import React from "react";
-import Projects from "./components/Projects/Projects";
-import Techs from "./components/Technology/Techs";
-import Introducrion from "./components/Welcome/Introduction";
+import Projects from "./Components/Projects/Projects";
+import Techs from "./Components/Technology/Techs";
+import Introducrion from "./Components/Welcome/Introduction";
 import img from "../../assets/favicon.ico";
 import { Helmet } from "react-helmet-async";
 

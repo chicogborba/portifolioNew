@@ -8,11 +8,11 @@ const TopNavBar = () => {
 
   return (
     <div
-      className="h-14 bg-[#F5E27B] sticky top-0 z-50 border-b-4 border-black
+      className="h-[6vh] bg-[#F5E27B] sticky top-0 z-50 border-b-4 border-black
     flex items-center justify-center"
     >
       <div
-        onClick={() => navigate("/")}
+        onClick={() => navigate("/contact")}
         className="flex sm:gap-4 gap-1 justify-center items-center hover:text-white hover:cursor-pointer transition-all"
       >
         <BiPhoneCall className="sm:h-10 sm:w-10 w-6 h-6" />

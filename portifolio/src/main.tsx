@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Projects from "./pages/Projects/Projects";
 import ScrollToTop from "./components/ScrollToTop";
 import TopNavBar from "./components/TopNavBar";
+import Contact from "./pages/Contact/Contact";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <HelmetProvider>
@@ -17,6 +18,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/project/:ProjectId" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </React.StrictMode>

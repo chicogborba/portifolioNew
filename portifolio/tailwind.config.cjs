@@ -3,6 +3,9 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      dropShadow: {
+        retro: "8px 8px 0px rgba(0, 0, 0, 1)",
+      },
       keyframes: {
         star: {
           "0%, 100%": { transform: "scale(1)" },

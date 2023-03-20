@@ -9,7 +9,7 @@ const ShadowContainer = ({ children, className }: ShadowContainerProps) => {
   return (
     <div
       className={
-        `bg-white drop-shadow-[8px_8px_0px_rgba(0,0,0,1)]
+        `bg-white drop-shadow-retro
     border-4 border-black p-10 sm:p-14` +
         " " +
         className
