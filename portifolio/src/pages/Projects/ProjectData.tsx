@@ -53,7 +53,7 @@ Integer scelerisque, lacus et lobortis lobortis, augue nisi pharetra sem, sed la
       {
         name: "React Router",
         icon: <SiReactrouter className="w-full h-full" />,
-        used: "Used to create all the routes and navigation",
+        used: "Used to create all the routes and navigation ",
       },
       {
         name: "Typescript",
