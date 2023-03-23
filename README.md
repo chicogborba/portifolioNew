@@ -1,4 +1,4 @@
-[franciscoborba.tech]# Neubrutalist Portfolio
+# [Neubrutalist Portfolio](https://github.com/ai/size-limit#readme)
 
 A portfolio website that utilizes a neubrutalist design to capture attention. This React and TypeScript single-page application showcases my current tech stack and recent projects. By highlighting my expertise and experience.
 
