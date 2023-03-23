@@ -19,7 +19,10 @@ const HomePage = () => {
         <link rel="icon" type="image/webp" href={img} sizes="16x16" />
         <meta name="author" content="Francisco Borba" />
         <meta name="keywords" content="React, Portfólio, Francisco Borba" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0 "
+        />
         <meta name="image" content={img} />
       </Helmet>
       <Introducrion />

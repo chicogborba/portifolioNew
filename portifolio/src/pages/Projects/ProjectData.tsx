@@ -58,7 +58,7 @@ Integer scelerisque, lacus et lobortis lobortis, augue nisi pharetra sem, sed la
       {
         name: "Typescript",
         icon: <SiTypescript className="w-full h-full" />,
-        used: "Used to add types to the project",
+        used: "Used to add types to the project ",
       },
     ],
     exemple_img: portfolio_img,
