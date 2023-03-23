@@ -1,3 +1,3 @@
 # Neubrutalist Portfolio
 
-<img src="https://imgur.com/a/ZmD6FcT" width="686" height="289">
+<img src="https://i.imgur.com/22NMguY.png" width="686" height="289">
