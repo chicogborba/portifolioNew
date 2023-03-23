@@ -3,8 +3,14 @@ import ButtonWithShadow from "../../../../components/ButtonWithShadow";
 import TitleOutlined from "../../../../components/TitleOutlined";
 import xDeco from "../../../../assets/x_deco.svg";
 import { BiPhoneCall } from "react-icons/bi";
+import { useNavigate } from "react-router-dom";
 
 const IntroducrionText = () => {
+  const navigate = useNavigate();
+  const navigateContact = () => {
+    navigate("/contact");
+  };
+
   return (
     <div className="flex sm:mr-28 flex-col">
       <TitleOutlined text="Francisco" />
@@ -33,6 +39,7 @@ const IntroducrionText = () => {
       </p>
       <ButtonWithShadow
         text="Contact me"
+        onClick={navigateContact}
         animate
         icon={
           <BiPhoneCall

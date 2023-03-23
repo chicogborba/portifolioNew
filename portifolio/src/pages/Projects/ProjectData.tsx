@@ -25,19 +25,22 @@ export const projectData: ProjectData[] = [
   {
     id: "1",
     title: "Portifolio",
-    main_ideia:
-      "A simple portifolio on a neubrutalist web design. Using  ReactJS and Tailwind",
+    main_ideia: `A portfolio website that utilizes a neubrutalist design to capture attention. 
+    This React and TypeScript single-page application showcases my current tech stack and recent projects. 
+    By highlighting my expertise and experience.`,
     execution: `
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in scelerisque justo. 
-
-Integer scelerisque, lacus et lobortis lobortis, augue nisi pharetra sem, sed lacinia mi orci nec risus. Aenean nec dignissim ex.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in scelerisque justo. 
-
-Integer scelerisque, lacus et lobortis lobortis, augue nisi pharetra sem, sed lacinia mi orci nec risus. Aenean nec dignissim ex.`,
+    To begin this project, I started by creating a task list in Notion. Then, I designed the project
+    using Figma while learning about neubrutalist design on Dribble. Next, I coded the project using VS Code 
+    and Vite with the TS template. Since this project required a lot of custom styles, I opted not to use a 
+    design library like MUI and built components from scratch using TailwindCSS. Once I finished creating
+    all the components, I developed the pages and routes using React Router, and then tested and fine-tuned
+    the responsiveness of the design.
+    Additionally, I made sure to optimize the project's SEO by using HelmtJS.
+    Finally, I deployed the project on Vercel and GitHub.`,
     learned: [
-      "learned how to use tailwind",
-      "learned how to use react",
-      "learned how to use typescript",
+      "Learned that TailwindCSS is fast but challenging to maintain; may use it for smaller projects",
+      "Discovered how to host a React app with Vercel and GitHub",
+      "Explored new features of React Router update, such as the navigate method for redirecting users to other pages without the need for the Link component or useHistory hook",
     ],
     used_techs: [
       {

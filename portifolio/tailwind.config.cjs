@@ -3,6 +3,9 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      minHeight: {
+        "screen-header": "calc(100vh - 4rem)",
+      },
       dropShadow: {
         retro: "8px 8px 0px rgba(0, 0, 0, 1)",
       },
