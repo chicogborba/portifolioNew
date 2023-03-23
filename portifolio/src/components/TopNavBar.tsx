@@ -8,7 +8,7 @@ const TopNavBar = () => {
 
   return (
     <div
-      className="h-[6vh] bg-[#F5E27B] sticky top-0 z-50 border-b-4 border-black
+      className="h-[8vh] bg-[#F5E27B] sticky top-0 z-50 border-b-4 border-black
     flex items-center justify-center"
     >
       <div

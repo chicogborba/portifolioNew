@@ -11,7 +11,7 @@ const Contact = () => {
         flex flex-col gap-20
         items-center
         h-auto
-        min-h-[94vh]
+        min-h-[92vh]
         bg-[#22F2FF]
         p-16"
     >
