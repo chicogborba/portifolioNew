@@ -6,3 +6,13 @@ A portfolio website that utilizes a neubrutalist design to capture attention. Th
 <p align="center">
 <img src="https://i.imgur.com/drcTAMR.png" align="center" width="848">
  </p>
+ 
+ <h2>Techs</h2>
+<p align="center">
+<img src="https://i.imgur.com/iO2hzZI.png" align="center" width="848">
+ </p>
+ 
+ <h2>Projects</h2>
+<p align="center">
+<img src="https://i.imgur.com/NuVFIiB.png" align="center" width="848">
+ </p>
