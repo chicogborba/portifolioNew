@@ -1,10 +1,5 @@
 # Neubrutalist Portfolio
 
-<style>
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-</style>
+<p align="center">
 <img src="https://i.imgur.com/drcTAMR.png" align="center" width="848">
+ </p>
