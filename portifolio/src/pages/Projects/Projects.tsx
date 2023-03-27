@@ -1,10 +1,14 @@
 import React from "react";
 import ShadowContainer from "./Components/ShadowContainer";
 import TitleOutlined from "../../components/TitleOutlined";
-
 import { projectData } from "./ProjectData";
 import { useParams } from "react-router-dom";
 import ProjectPage from "./Components/ProjectPage";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
 
 const Projects = () => {
   let { ProjectId } = useParams();

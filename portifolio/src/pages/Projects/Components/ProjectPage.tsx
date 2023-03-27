@@ -2,14 +2,17 @@ import React from "react";
 import TitleOutlined from "../../../components/TitleOutlined";
 import { ProjectData } from "../ProjectData";
 import ShadowContainer from "./ShadowContainer";
+import xDeco from "../../../assets/x_deco.svg";
+import blueDeco from "../../../assets/blue_deco.svg";
 
 export interface ProjectPageProps {
   project: ProjectData | undefined;
 }
-
+// TODO
+//   <img alt="Geometric decoration" className="relative" src={blueDeco} />
 const ProjectPage = ({ project }: ProjectPageProps) => {
   return (
-    <>
+    <div className="">
       <div className="max-w-7xl text-center sm:text-left w-full">
         <TitleOutlined text={project?.title || ""} color="pink" />
         <h2 className="font-Jakarta text-2xl sm:text-3xl mt-3 sm:mt-6">
@@ -35,6 +38,15 @@ const ProjectPage = ({ project }: ProjectPageProps) => {
           />
         </ShadowContainer>
         <div className="flex flex-col gap-8">
+          <div className="flex overflow-hidden w-auto h-24">
+            <img
+              alt="Geometric decoration"
+              src={xDeco}
+              width={"430"}
+              height={"430"}
+              className="self-center w-full"
+            />
+          </div>
           {project?.used_techs.map((tech) => (
             <ShadowContainer className="items-center gap-8 sm:flex-row flex-col flex">
               <div className="flex-1 w-20 sm:w-auto">{tech.icon}</div>
@@ -48,6 +60,15 @@ const ProjectPage = ({ project }: ProjectPageProps) => {
               </div>
             </ShadowContainer>
           ))}
+          <div className="flex overflow-hidden w-auto h-24">
+            <img
+              alt="Geometric decoration"
+              src={xDeco}
+              width={"430"}
+              height={"430"}
+              className="self-center w-full"
+            />
+          </div>
         </div>
         <div className="flex flex-col gap-8">
           <ShadowContainer className="">
@@ -70,7 +91,7 @@ const ProjectPage = ({ project }: ProjectPageProps) => {
           </ShadowContainer>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
