@@ -1,23 +1,22 @@
 import React from "react";
-import ShadowContainer from "./Components/ShadowContainer";
 import TitleOutlined from "../../components/TitleOutlined";
 import { projectData } from "./ProjectData";
 import { useParams } from "react-router-dom";
 import ProjectPage from "./Components/ProjectPage";
-
-// Import Swiper styles
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow } from "swiper";
 import "swiper/css";
-import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import "swiper/css/effect-coverflow";
+import PolaroidPhoto from "../../components/PolaroidPhoto";
+import PhotoSlider from "./Components/PhotoSlider";
+import ProjectGalery from "./Components/ProjectGalery";
 
 const Projects = () => {
-  let { ProjectId } = useParams();
+  const { ProjectId } = useParams();
 
   const project = projectData.find((project) => project.id === ProjectId);
-
-  const isCommingSoon = !!project;
-
-  console.log(project);
+  const isNotCommingSoon = !!project;
 
   return (
     <>
@@ -31,7 +30,7 @@ const Projects = () => {
      sm:p-20 p-10
      border-b-[6px] border-black"
       >
-        {isCommingSoon ? (
+        {isNotCommingSoon ? (
           <ProjectPage project={project} />
         ) : (
           <div>
@@ -39,6 +38,7 @@ const Projects = () => {
           </div>
         )}
       </div>
+      <ProjectGalery/>
     </>
   );
 };

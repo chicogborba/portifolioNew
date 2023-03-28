@@ -6,6 +6,7 @@ export interface TitleOutlinedProps {
   color?: keyof TextColors;
   align?: "left" | "center";
   subtitle?: string;
+  className?: string;
 }
 
 type TextColors = {
@@ -26,6 +27,7 @@ const TitleOutlined = ({
   color,
   align,
   subtitle,
+  className,
 }: TitleOutlinedProps) => {
   //Define the alignment of the text DEFAULT: left
   const selectedAlign = align ? "md:text-" + align : "sm:text-left";
@@ -56,13 +58,15 @@ const TitleOutlined = ({
     <>
       <h1
         style={style}
-        className={`
+        className={
+          `
       ${textColors[selectedColor]} 
       ${textSizes[selectedSize]}
       ${selectedAlign}
       font-Jakarta font-extrabold
-      text-center tracking-widest
-      `}
+      text-center tracking-widest 
+       ` + className
+        }
       >
         {text}
       </h1>

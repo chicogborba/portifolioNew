@@ -12,7 +12,7 @@ export interface ProjectPageProps {
 //   <img alt="Geometric decoration" className="relative" src={blueDeco} />
 const ProjectPage = ({ project }: ProjectPageProps) => {
   return (
-    <div className="">
+    <>
       <div className="max-w-7xl text-center sm:text-left w-full">
         <TitleOutlined text={project?.title || ""} color="pink" />
         <h2 className="font-Jakarta text-2xl sm:text-3xl mt-3 sm:mt-6">
@@ -91,7 +91,7 @@ const ProjectPage = ({ project }: ProjectPageProps) => {
           </ShadowContainer>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
