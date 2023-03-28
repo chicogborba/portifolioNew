@@ -13,6 +13,7 @@ type TextColors = {
   purpel: string;
   pink: string;
   salmon: string;
+  green: string;
 };
 
 type TextSizes = {
@@ -46,6 +47,7 @@ const TitleOutlined = ({
     purpel: "text-[#C6B2EF]",
     pink: "text-[#FFB6C1]",
     salmon: "text-[#FFA07A]",
+    green: "text-[#9BEF7E]",
   };
 
   // Text shadow used to create the outline effect

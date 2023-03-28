@@ -44,6 +44,7 @@ const Projects = () => {
                   <div className="w-44 h-44">{project.icon}</div>
                   <div className="mb-8">
                     <ButtonWithShadow
+                      disabled={project.name === "Comin Soon"}
                       onClick={() => handleProjectClick(project.id)}
                       text="Read More"
                     />

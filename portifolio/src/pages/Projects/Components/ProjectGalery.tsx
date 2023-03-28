@@ -12,7 +12,7 @@ const ProjectGalery = () => {
           <TitleOutlined
             className="mb-4"
             text={"Galery"}
-            color="pink"
+            color="green"
             align="center"
           />
           <div className="font-Special-Elite text-5xl -mb-4 mx-4">/</div>
