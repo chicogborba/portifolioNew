@@ -4,23 +4,18 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import PolaroidPhoto from "../../../components/PolaroidPhoto";
 
 const PhotoSlider = () => {
-
-    let SlidesPerView;
-    if (window.innerWidth < 384) {
-      SlidesPerView = 1;
-    } else if (window.innerWidth < 512) {
-      SlidesPerView = 1.1;
-    } else if (window.innerWidth < 640) {
-      SlidesPerView = 1.1;
-    } else if (window.innerWidth < 768) {
-      SlidesPerView = 1.6;
-    } else if (window.innerWidth < 1024) {
-      SlidesPerView = 2.2;
-    } else if (window.innerWidth < 1280) {
-      SlidesPerView = 2.4;
-    } else {
-      SlidesPerView = 2.4;
-    }
+  let SlidesPerView;
+  if (window.innerWidth < 640) {
+    SlidesPerView = 1.2;
+  } else if (window.innerWidth < 768) {
+    SlidesPerView = 1.6;
+  } else if (window.innerWidth < 1024) {
+    SlidesPerView = 2.2;
+  } else if (window.innerWidth < 1280) {
+    SlidesPerView = 2.4;
+  } else {
+    SlidesPerView = 2.4;
+  }
 
   return (
     <>

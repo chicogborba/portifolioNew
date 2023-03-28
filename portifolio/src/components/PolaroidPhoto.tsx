@@ -17,7 +17,7 @@ const PolaroidPhoto = ({ img, title }: PolaroidPhotoProps) => {
             border-2 border-black"
     >
       <img src={img} width={520} height={"auto"} />
-      <p className="font-Special-Elite text-3xl">{title}</p>
+      <p className="font-Special-Elite sm:text-3xl text-2xl">{title}</p>
     </div>
   );
 };
