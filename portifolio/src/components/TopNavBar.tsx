@@ -1,6 +1,6 @@
 import React from "react";
 import { BiPhoneCall } from "react-icons/bi";
-import { TbTool } from "react-icons/tb";
+import { FiGithub } from "react-icons/fi";
 import { HiOutlineHome } from "react-icons/hi";
 import { useNavigate } from "react-router-dom";
 const TopNavBar = () => {
@@ -12,6 +12,10 @@ const TopNavBar = () => {
 
   const navigateContact = () => {
     navigate("/contact");
+  };
+
+  const openGithub = () => {
+    window.open("https://github.com/chicogborba", "_blank");
   };
 
   return (
@@ -28,11 +32,11 @@ const TopNavBar = () => {
       </div>
       <div className="border rounded-full border-black h-6 sm:mx-8 mx-3" />
       <div
-        onClick={navigateHome}
+        onClick={openGithub}
         className="flex sm:gap-4 gap-1 justify-center items-center hover:text-white hover:cursor-pointer transition-all"
       >
-        <TbTool className="sm:h-10 sm:w-10 w-6 h-6" />
-        <p className=" font-Jakarta sm:text-xl text-base">Projects</p>
+        <FiGithub className="sm:h-8 sm:w-8 w-4 h-4" />
+        <p className=" font-Jakarta sm:text-xl text-base">GitHub</p>
       </div>
       <div className="border rounded-full border-black h-6 sm:mx-8 mx-3" />
       <div

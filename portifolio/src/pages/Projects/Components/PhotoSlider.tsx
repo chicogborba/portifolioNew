@@ -2,6 +2,7 @@ import React from "react";
 import { EffectCoverflow } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import PolaroidPhoto from "../../../components/PolaroidPhoto";
+import { photoSliderData } from "./PhotoSliderData/PhotoSliderData";
 
 const PhotoSlider = () => {
   let SlidesPerView;
@@ -14,11 +15,11 @@ const PhotoSlider = () => {
   } else if (window.innerWidth < 1280) {
     SlidesPerView = 2.4;
   } else {
-    SlidesPerView = 2.4;
+    SlidesPerView = 3;
   }
 
   return (
-    <>
+    <div className="max-w-7xl mx-auto">
       <Swiper
         keyboard={true}
         initialSlide={1}
@@ -37,38 +38,13 @@ const PhotoSlider = () => {
         slidesPerView={SlidesPerView}
         centeredSlides={true}
       >
-        <SwiperSlide>
-          <PolaroidPhoto
-            img={"https://i.imgur.com/sq2R1Mo.png"}
-            title={"Design on figma1"}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <PolaroidPhoto
-            img={"https://i.imgur.com/sq2R1Mo.png"}
-            title={"Design on figma2"}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <PolaroidPhoto
-            img={"https://i.imgur.com/sq2R1Mo.png"}
-            title={"Design on figma3"}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <PolaroidPhoto
-            img={"https://i.imgur.com/sq2R1Mo.png"}
-            title={"Design on figma4"}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <PolaroidPhoto
-            img={"https://i.imgur.com/sq2R1Mo.png"}
-            title={"Design on figma5"}
-          />
-        </SwiperSlide>
+        {photoSliderData.map((photo) => (
+          <SwiperSlide>
+            <PolaroidPhoto img={photo.img} title={photo.title} />
+          </SwiperSlide>
+        ))}
       </Swiper>
-    </>
+    </div>
   );
 };
 
