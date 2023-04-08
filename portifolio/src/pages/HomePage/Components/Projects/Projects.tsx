@@ -6,7 +6,6 @@ import { projectData } from "./ProjectData";
 import { useNavigate } from "react-router-dom";
 
 const Projects = () => {
-  // use navigate to redirect to another page reseting the scroll position
   const navigate = useNavigate();
 
   const handleProjectClick = (projectID: string) => {

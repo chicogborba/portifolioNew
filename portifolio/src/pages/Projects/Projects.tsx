@@ -38,7 +38,7 @@ const Projects = () => {
           </div>
         )}
       </div>
-      <ProjectGalery/>
+      {isNotCommingSoon && <ProjectGalery projectId={ProjectId || "0"} />}
     </>
   );
 };

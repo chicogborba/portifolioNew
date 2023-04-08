@@ -14,15 +14,15 @@ export const projectData = [
     bg_color: "bg-[#D6F57B]",
   },
   {
-    id: "0",
-    name: "Comin Soon",
-    icon: <BiRocket className=" text-stone-500 w-full h-full" />,
+    id: "2",
+    name: "Landing Page",
+    icon: <IoIosGlobe className=" w-full h-full" />,
     bg_color: "bg-[#D6F57B]",
   },
   {
     id: "0",
     name: "Comin Soon",
-    icon: <IoIosGlobe className=" text-stone-500 w-full h-full" />,
+    icon: <BiRocket className=" text-stone-500 w-full h-full" />,
     bg_color: "bg-[#D6F57B]",
   },
 ];

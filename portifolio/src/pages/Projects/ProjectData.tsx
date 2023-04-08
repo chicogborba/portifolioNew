@@ -1,6 +1,7 @@
 import portfolio_img from "../../assets/pictures/portfolio_img.webp";
+import landingPageImg from "../../assets/pictures/landingPage.webp";
 import { FaReact } from "react-icons/fa";
-import { SiTypescript } from "react-icons/si";
+import { SiMaterialdesign, SiTypescript } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
 import { BsGithub } from "react-icons/bs";
 import { SiReactrouter } from "react-icons/si";
@@ -13,6 +14,7 @@ export type UsedTech = {
 
 export type ProjectData = {
   id: string;
+  date: string;
   title: string;
   main_ideia: string;
   execution: string;
@@ -24,6 +26,7 @@ export type ProjectData = {
 export const projectData: ProjectData[] = [
   {
     id: "1",
+    date: "April 2023",
     title: "Portifolio",
     main_ideia: `A portfolio website that utilizes a neubrutalist design to capture attention. 
     This React and TypeScript single-page application showcases my current tech stack and recent projects. 
@@ -65,5 +68,49 @@ export const projectData: ProjectData[] = [
       },
     ],
     exemple_img: portfolio_img,
+  },
+  {
+    id: "2",
+    date: "November 2022",
+    title: "Landing Page",
+    main_ideia: `A landing page that showcases a writer’s unique works.
+    This website is a single-page application built with React and MUI,
+    featuring a mobile-first design. It displays the writer’s latest works, pictures and texts..`,
+    execution: `
+    I started the project by creating a minimalist design
+    using the components of the MUI React library inside Figma.
+    Then I used CRA and Yarn to start the application and install React
+    Router, for the SPA, and the MUI v5 library. I recreated the design
+    decided on Figma with minor changes adding CSS animations and transitions.
+    After everything was done I added texts, photos and the book links and to finish
+    the project I deployed it using Vercel. TODO: enhance the SEO of the project and add a intagram feed integration.`,
+    learned: [
+      "Learned about CSS animations and how to use them to create a more dynamic design",
+      "Learned about image optimization and how to use it to improve the performance of the website using webp format",
+      "Started to use Vercel for hosting my projects and how to use a custom domain with SSL",
+    ],
+    used_techs: [
+      {
+        name: "ReactJS",
+        icon: <FaReact className="w-full h-full" />,
+        used: "Front-end framework used to create the SPA",
+      },
+      {
+        name: "Material UI",
+        icon: <SiMaterialdesign className="w-full h-full" />,
+        used: "Used for a base of all the components",
+      },
+      {
+        name: "React Router",
+        icon: <SiReactrouter className="w-full h-full" />,
+        used: "Used to create all the routes and navigation  ",
+      },
+      {
+        name: "Typescript",
+        icon: <SiTypescript className="w-full h-full" />,
+        used: "Used to add types to the project ",
+      },
+    ],
+    exemple_img: landingPageImg,
   },
 ];

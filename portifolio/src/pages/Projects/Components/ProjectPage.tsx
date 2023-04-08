@@ -8,15 +8,13 @@ import blueDeco from "../../../assets/blue_deco.svg";
 export interface ProjectPageProps {
   project: ProjectData | undefined;
 }
-// TODO
-//   <img alt="Geometric decoration" className="relative" src={blueDeco} />
 const ProjectPage = ({ project }: ProjectPageProps) => {
   return (
     <>
       <div className="max-w-7xl text-center sm:text-left w-full">
         <TitleOutlined text={project?.title || ""} color="pink" />
         <h2 className="font-Jakarta text-2xl sm:text-3xl mt-3 sm:mt-6">
-          April 2022 / Tech Stack
+          {project?.date} / Tech Stack
         </h2>
       </div>
       <div className=" flex flex-col lg:grid grid-cols-2 gap-8 max-w-7xl">

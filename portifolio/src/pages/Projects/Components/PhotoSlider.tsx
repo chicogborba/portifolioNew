@@ -4,7 +4,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import PolaroidPhoto from "../../../components/PolaroidPhoto";
 import { photoSliderData } from "./PhotoSliderData/PhotoSliderData";
 
-const PhotoSlider = () => {
+interface PhotoSliderProps {
+  projectId: string;
+}
+
+const PhotoSlider = ({ projectId }: PhotoSliderProps) => {
   let SlidesPerView;
   if (window.innerWidth < 640) {
     SlidesPerView = 1.2;
@@ -18,6 +22,9 @@ const PhotoSlider = () => {
     SlidesPerView = 3;
   }
 
+  const photos = photoSliderData[projectId as keyof typeof photoSliderData]
+    ? photoSliderData[projectId as keyof typeof photoSliderData]
+    : photoSliderData[1];
   return (
     <div className="max-w-7xl mx-auto">
       <Swiper
@@ -38,7 +45,7 @@ const PhotoSlider = () => {
         slidesPerView={SlidesPerView}
         centeredSlides={true}
       >
-        {photoSliderData.map((photo) => (
+        {photos.map((photo) => (
           <SwiperSlide>
             <PolaroidPhoto img={photo.img} title={photo.title} />
           </SwiperSlide>
