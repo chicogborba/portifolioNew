@@ -1,10 +1,12 @@
 import portfolio_img from "../../assets/pictures/portfolio_img.webp";
 import landingPageImg from "../../assets/pictures/landingPage.webp";
-import { FaReact } from "react-icons/fa";
-import { SiMaterialdesign, SiTypescript } from "react-icons/si";
+import CAHImg from "../../assets/pictures/CAH.webp";
+import { FaCss3Alt, FaReact } from "react-icons/fa";
+import { SiJavascript, SiMaterialdesign, SiTypescript } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
-import { BsGithub } from "react-icons/bs";
+import { SiSocketdotio } from "react-icons/si";
 import { SiReactrouter } from "react-icons/si";
+import { IoLogoNodejs } from "react-icons/io";
 
 export type UsedTech = {
   name: string;
@@ -75,7 +77,7 @@ export const projectData: ProjectData[] = [
     title: "Landing Page",
     main_ideia: `A landing page that showcases a writer’s unique works.
     This website is a single-page application built with React and MUI,
-    featuring a mobile-first design. It displays the writer’s latest works, pictures and texts..`,
+    featuring a mobile-first design. It displays the writer’s latest works, pictures and texts.`,
     execution: `
     I started the project by creating a minimalist design
     using the components of the MUI React library inside Figma.
@@ -112,5 +114,42 @@ export const projectData: ProjectData[] = [
       },
     ],
     exemple_img: landingPageImg,
+  },
+  {
+    id: "3",
+    date: "April 2023",
+    title: "Card Game",
+    main_ideia: `A simple card game based on the popular "Cards Against Humanity" game.
+    The main objective was to study the basics of NodeJS and Socket.io and the problems that
+    arise when creating a multiplayer game.`,
+    execution: `
+    *PROJECT IN PROGRESS*
+    To begin this project, I started by getting the cards data from the Cards Against Humanity free PDF.
+    After that, I created the game logic using just JS, HTML and CSS to keep the project simple.
+    And now I'm working on the multiplayer using NodeJS and Socket.io.`,
+    learned: ["First time using NodeJS and Socket.io"],
+    used_techs: [
+      {
+        name: "JavaScript",
+        icon: <SiJavascript className="w-full h-full" />,
+        used: "Used to create the game logic",
+      },
+      {
+        name: "CSS",
+        icon: <FaCss3Alt className="w-full h-full" />,
+        used: "Used to create the styles",
+      },
+      {
+        name: "NodeJS",
+        icon: <IoLogoNodejs className="w-full h-full" />,
+        used: "Used as the server for multiplayer",
+      },
+      {
+        name: "Socket.io",
+        icon: <SiSocketdotio className="w-full h-full" />,
+        used: "Used to create real-time communication between client and server",
+      },
+    ],
+    exemple_img: CAHImg,
   },
 ];

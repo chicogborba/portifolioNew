@@ -3,7 +3,7 @@ import { TbRobot } from "react-icons/tb";
 import { TiShoppingCart } from "react-icons/ti";
 import { RiPencilRuler2Line } from "react-icons/ri";
 import { IoIosGlobe } from "react-icons/io";
-import { BiRocket } from "react-icons/bi";
+import { TbPlayCard } from "react-icons/tb";
 import { BsBriefcase } from "react-icons/bs";
 
 export const projectData = [
@@ -17,12 +17,12 @@ export const projectData = [
     id: "2",
     name: "Landing Page",
     icon: <IoIosGlobe className=" w-full h-full" />,
-    bg_color: "bg-[#D6F57B]",
+    bg_color: "bg-[#7BF5BB]",
   },
   {
-    id: "0",
-    name: "Comin Soon",
-    icon: <BiRocket className=" text-stone-500 w-full h-full" />,
-    bg_color: "bg-[#D6F57B]",
+    id: "3",
+    name: "Multiplayer Game",
+    icon: <TbPlayCard className="w-full h-full" />,
+    bg_color: "bg-[#7BDFF5]",
   },
 ];

@@ -1,6 +1,7 @@
 import contactPageImg from "./photos/ContactPage.webp";
 import homePageImg from "./photos/HomePage.webp";
 import landingPageFigma from "./photos/LandingPageFigma.webp";
+import CAHGame from "./photos/CAHGame.webp";
 import tiltJsGif from "./photos/TiltJs.gif";
 import interactiveTechGif from "./photos/InteractiveTech.gif";
 import landingPageHomeGif from "./photos/LandingPageHome.gif";
@@ -36,6 +37,12 @@ export const photoSliderData = {
     {
       title: "Home Page",
       img: landingPageHomeGif,
+    },
+  ],
+  "3": [
+    {
+      title: "Game Page",
+      img: CAHGame,
     },
   ],
 };
