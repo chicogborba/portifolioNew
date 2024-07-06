@@ -1,6 +1,9 @@
 import contactPageImg from "./photos/ContactPage.webp";
 import homePageImg from "./photos/HomePage.webp";
 import landingPageFigma from "./photos/LandingPageFigma.webp";
+import Calculator from "./photos/Calculator.png";
+import diferentSizes from "./photos/DiferentSizes.png";
+import MainScreen from "./photos/MainScreen.png";
 import CAHGame from "./photos/CAHGame.webp";
 import tiltJsGif from "./photos/TiltJs.gif";
 import interactiveTechGif from "./photos/InteractiveTech.gif";
@@ -43,6 +46,20 @@ export const photoSliderData = {
     {
       title: "Game Page",
       img: CAHGame,
+    },
+  ],
+  "4": [
+    {
+      title: "Different Text Sizes",
+      img: diferentSizes,
+    },
+    {
+      title: "Calculator",
+      img: Calculator,
+    },
+    {
+      title: "Introduction Screen",
+      img: MainScreen,
     },
   ],
 };

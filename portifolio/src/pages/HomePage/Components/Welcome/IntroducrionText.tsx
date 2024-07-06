@@ -29,13 +29,13 @@ const IntroducrionText = () => {
       mt-4 mb-16"
       >
         {`
-        Hi, my name is Francisco Borba and I am a front-end
-        developer with experience working on large scale
-        projects. 
-        
-        I have a strong passion for UX/UI design and
-        always looking for another challenge to further
-        enhance my skills and knowledge.`}
+        Hi, my name is Francisco Borba and I am a 
+        passionate developer who loves new challenges.
+
+        I have a strong passion for UX/UI design,
+        low-level programming and mathematics in general.
+        I am always looking for new ways to improve my skills.
+        `}
       </p>
       <ButtonWithShadow
         text="Contact me"

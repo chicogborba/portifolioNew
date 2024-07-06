@@ -5,8 +5,13 @@ import { SiTailwindcss } from "react-icons/si";
 import { BsGithub } from "react-icons/bs";
 import { SiStorybook } from "react-icons/si";
 import { SiMaterialui } from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
 import { TbBrandPython } from "react-icons/tb";
+import { FaNodeJs } from "react-icons/fa";
+import { FaJava } from "react-icons/fa";
+import { SiSpringboot } from "react-icons/si";
+import { IoCubeOutline } from "react-icons/io5";
+import { SiMongodb } from "react-icons/si";
+import cLangIcon from "../../../../assets/c-lang.svg";
 
 export const list_of_techs: ListOfTechs = [
   {
@@ -54,6 +59,7 @@ A CSS framework that provides utility classes for building custom user interface
     bg_color: "bg-[#F678A1]",
     id: 5,
   },
+
   {
     name: "MUI",
     text: `
@@ -66,15 +72,59 @@ A CSS framework that provides utility classes for building custom user interface
     id: 6,
   },
   {
-    name: "NextJS",
+    name: "NodeJS",
     text: `
-      Next.js is a framework for building server-side rendered React apps.
-      It includes features for optimized performance, easy deployment, and static 
-      site generation, enabling developers to build modern web applications with ease.
+      Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+      It allows developers to write server-side code in JavaScript and build
+      scalable network applications quickly and efficiently.
 `,
-    icon: <TbBrandNextjs className="w-full h-full" />,
+    icon: <FaNodeJs className="w-full h-full" />,
     bg_color: "bg-[#80D2E5]",
     id: 7,
+  },
+  {
+    name: "MongoDB",
+    text: `
+      MongoDB is a NoSQL database that stores data in flexible, JSON-like documents.
+      It's widely used for building scalable, high-performance applications and
+      offers features like sharding, replication, and indexing.
+`,
+    icon: <SiMongodb className="w-full h-full" />,
+    bg_color: "bg-[#8ff0a6]",
+    id: 8,
+  },
+  {
+    name: "C Language",
+    text: `
+      C is a general-purpose programming language known for its efficiency, speed,
+      and low-level control over hardware. It's widely used for system programming,
+      embedded systems, and developing operating systems.
+`,
+    icon: <img src={cLangIcon} className=" w-full h-full" />,
+    bg_color: "bg-[#9f8ff0]",
+    id: 8,
+  },
+  {
+    name: "Java",
+    text: `
+      Java is a class-based, object-oriented programming language that's designed to
+      have as few implementation dependencies as possible. It's widely used for
+      building enterprise applications, mobile apps, and web services.
+`,
+    icon: <FaJava className="w-full h-full" />,
+    bg_color: "bg-[#f69178]",
+    id: 9,
+  },
+  {
+    name: "Spring Boot",
+    text: `
+      Spring Boot is an open-source Java-based framework used for building
+      stand-alone, production-ready Spring applications. It simplifies the
+      development process by providing default configurations and boilerplate code.
+`,
+    icon: <SiSpringboot className="w-full h-full" />,
+    bg_color: "bg-[#9ef678]",
+    id: 10,
   },
   {
     name: "Python",
@@ -85,6 +135,6 @@ A CSS framework that provides utility classes for building custom user interface
 `,
     icon: <TbBrandPython className="w-full h-full" />,
     bg_color: "bg-[#F0D48F]",
-    id: 7,
+    id: 8,
   },
 ];

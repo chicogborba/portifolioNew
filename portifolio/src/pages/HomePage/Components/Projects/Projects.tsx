@@ -4,6 +4,7 @@ import TitleOutlined from "../../../../components/TitleOutlined";
 import WindowContainer from "../../../../components/WindowContainer";
 import { projectData } from "./ProjectData";
 import { useNavigate } from "react-router-dom";
+import calc from "../../../../assets/calculator.png";
 
 const Projects = () => {
   const navigate = useNavigate();
@@ -40,7 +41,9 @@ const Projects = () => {
                 headerTitle={project.name}
               >
                 <div className="flex flex-col justify-center items-center">
-                  <div className="w-44 h-44">{project.icon}</div>
+                  <div className="w-44 h-44 flex items-center justify-center">
+                    {project.icon}
+                  </div>
                   <div className="mb-8">
                     <ButtonWithShadow
                       disabled={project.name === "Comin Soon"}

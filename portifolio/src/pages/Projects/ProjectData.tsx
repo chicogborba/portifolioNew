@@ -1,12 +1,16 @@
 import portfolio_img from "../../assets/pictures/portfolio_img.webp";
 import landingPageImg from "../../assets/pictures/landingPage.webp";
 import CAHImg from "../../assets/pictures/CAH.webp";
+import CalculatorBanner from "../../assets/CalculatorBanner.png";
 import { FaCss3Alt, FaReact } from "react-icons/fa";
 import { SiJavascript, SiMaterialdesign, SiTypescript } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
 import { SiSocketdotio } from "react-icons/si";
 import { SiReactrouter } from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io";
+import { IoCubeOutline } from "react-icons/io5";
+import { SiBlender } from "react-icons/si";
+import { MdOutlineAnimation } from "react-icons/md";
 
 export type UsedTech = {
   name: string;
@@ -116,40 +120,40 @@ export const projectData: ProjectData[] = [
     exemple_img: landingPageImg,
   },
   {
-    id: "3",
-    date: "April 2023",
-    title: "Card Game",
-    main_ideia: `A simple card game based on the popular "Cards Against Humanity" game.
-    The main objective was to study the basics of NodeJS and Socket.io and the problems that
-    arise when creating a multiplayer game.`,
-    execution: `
-    *PROJECT IN PROGRESS*
-    To begin this project, I started by getting the cards data from the Cards Against Humanity free PDF.
-    After that, I created the game logic using just JS, HTML and CSS to keep the project simple.
-    And now I'm working on the multiplayer using NodeJS and Socket.io.`,
-    learned: ["First time using NodeJS and Socket.io"],
+    id: "4",
+    date: "April 2024",
+    title: "3D Calculator",
+    main_ideia: `Well, one of the first projects I ever did with HTML, CSS and JS
+    was a calculator. So I thought it would be cool to start learning ThreeJS by creating 
+    a functional 3D calculator.`,
+    execution: `Since I have no experience modeling 3D objects, I started by looking for an existing one and found a free calculator model on Polly.pizza by the user Bruno Oliveira. After that, I began to learn the basics of ThreeJS and how to import the model into the project. Once that was working and the model was being displayed correctly, I started developing a way to detect which object my mouse was hovering over and how to interact with it. I chose to use a ray casting algorithm that is already implemented in ThreeJS to detect the object and change its color when the mouse is hovering over it. After that, I created animations for the button clicks and to change the display of the calculator. Dynamically creating 3D text and adding it to the calculator proved to be a challenge and highly inefficient, so I decided to use a 2D canvas to dynamically create a texture that could be shown on the calculator display. With all of the basic functionalities working, I started to add features to the thermal printer and the paper roll, which can now even print the history of the calculator. When all was done, I added a simple introduction screen and deployed the project on Vercel.`,
+    learned: [
+      "Basic 3D modeling in Blender",
+      "Basics of ThreeJS and WebGL",
+      "Basics of ray casting and how to use it to detect objects in a 3D scene",
+    ],
     used_techs: [
       {
-        name: "JavaScript",
-        icon: <SiJavascript className="w-full h-full" />,
-        used: "Used to create the game logic",
+        name: "TypeScript",
+        icon: <SiTypescript className="w-full h-full" />,
+        used: "Main language used in the project",
       },
       {
-        name: "CSS",
-        icon: <FaCss3Alt className="w-full h-full" />,
-        used: "Used to create the styles",
+        name: "ThreeJS",
+        icon: <IoCubeOutline className="w-full h-full" />,
+        used: "Main library used in the project for 3D rendering with WebGL",
       },
       {
-        name: "NodeJS",
-        icon: <IoLogoNodejs className="w-full h-full" />,
-        used: "Used as the server for multiplayer",
+        name: "Blender",
+        icon: <SiBlender className="w-full h-full" />,
+        used: "Used to modify the 3D models",
       },
       {
-        name: "Socket.io",
-        icon: <SiSocketdotio className="w-full h-full" />,
-        used: "Used to create real-time communication between client and server",
+        name: "TweenJs",
+        icon: <MdOutlineAnimation className="w-full h-full" />,
+        used: "Used to create the 3D animations",
       },
     ],
-    exemple_img: CAHImg,
+    exemple_img: CalculatorBanner,
   },
 ];
