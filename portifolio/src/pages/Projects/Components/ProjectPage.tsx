@@ -4,18 +4,54 @@ import { ProjectData } from "../ProjectData";
 import ShadowContainer from "./ShadowContainer";
 import xDeco from "../../../assets/x_deco.svg";
 import blueDeco from "../../../assets/blue_deco.svg";
+import { FaGithub } from "react-icons/fa";
+import { IoLogoGithub } from "react-icons/io";
+import { RiSignalTowerFill } from "react-icons/ri";
 
 export interface ProjectPageProps {
   project: ProjectData | undefined;
 }
 const ProjectPage = ({ project }: ProjectPageProps) => {
+  const [isbuttonHovered, setisbuttonHovered] = React.useState(false);
+  const verifyHover = async () => {
+    setisbuttonHovered(true);
+  };
   return (
     <>
-      <div className="max-w-7xl text-center sm:text-left w-full">
-        <TitleOutlined text={project?.title || ""} color="pink" />
-        <h2 className="font-Jakarta text-2xl sm:text-3xl mt-3 sm:mt-6">
-          {project?.date} / Tech Stack
-        </h2>
+      <div className="flex justify-around max-w-7xl w-full">
+        <div className="max-w-7xl text-center sm:text-left w-full">
+          <TitleOutlined text={project?.title || ""} color="pink" />
+          <h2 className="font-Jakarta text-2xl sm:text-3xl mt-3 sm:mt-6">
+            {project?.date} / Tech Stack
+          </h2>
+        </div>
+        {project?.previewLink && (
+          <div className="flex gap-4 mt-4">
+            <a
+              onMouseEnter={verifyHover}
+              className={`bg-[#f5bc62] font-extrabold 
+              hover:cursor-pointer hover:scale-110 hover:drop-shadow-[0px_0px_0px_rgba(0,0,0,1)] 
+              flex rounded-lg h-fit gap-4 drop-shadow-retro border-4 p-4 border-black text-2xl items-center
+              transition-all ${!isbuttonHovered ? "animate-bounce" : ""}`}
+              href={project?.previewLink || ""}
+              target="_blank"
+              rel="noreferrer"
+            >
+              DEMO
+              <RiSignalTowerFill className="w-10 h-10" />
+            </a>
+            <a
+              className="bg-[#8095ad] flex rounded-lg flex-col h-fit transition-all
+              hover:cursor-pointer hover:scale-110 hover:drop-shadow-[0px_0px_0px_rgba(0,0,0,1)] 
+              justify-center items-center drop-shadow-retro p-4 border-4 border-black text-2xl"
+              href={project?.repoLink || ""}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <IoLogoGithub className="w-10 h-10" />
+            </a>
+          </div>
+        )}
       </div>
       <div className=" flex flex-col lg:grid grid-cols-2 gap-8 max-w-7xl">
         <ShadowContainer className=" gap-8 flex-wrap flex justify-between col-span-2 ">

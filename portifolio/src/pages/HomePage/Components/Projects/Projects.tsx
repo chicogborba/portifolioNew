@@ -4,7 +4,6 @@ import TitleOutlined from "../../../../components/TitleOutlined";
 import WindowContainer from "../../../../components/WindowContainer";
 import { projectData } from "./ProjectData";
 import { useNavigate } from "react-router-dom";
-import calc from "../../../../assets/calculator.png";
 
 const Projects = () => {
   const navigate = useNavigate();

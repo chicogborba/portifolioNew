@@ -1,13 +1,21 @@
 import portfolio_img from "../../assets/pictures/portfolio_img.webp";
 import landingPageImg from "../../assets/pictures/landingPage.webp";
-import CAHImg from "../../assets/pictures/CAH.webp";
+import WFCMain from "../../assets/pictures/WFC_main.png";
+import ESMain from "../../assets/pictures/ES_Main.png";
+
 import CalculatorBanner from "../../assets/CalculatorBanner.png";
-import { FaCss3Alt, FaReact } from "react-icons/fa";
-import { SiJavascript, SiMaterialdesign, SiTypescript } from "react-icons/si";
+import { FaAws, FaCss3Alt, FaHtml5, FaPython, FaReact } from "react-icons/fa";
+import {
+  SiJavascript,
+  SiLeaflet,
+  SiMaterialdesign,
+  SiOpencv,
+  SiTypescript,
+} from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
 import { SiSocketdotio } from "react-icons/si";
 import { SiReactrouter } from "react-icons/si";
-import { IoLogoNodejs } from "react-icons/io";
+import { IoLogoCss3, IoLogoJavascript, IoLogoNodejs } from "react-icons/io";
 import { IoCubeOutline } from "react-icons/io5";
 import { SiBlender } from "react-icons/si";
 import { MdOutlineAnimation } from "react-icons/md";
@@ -22,6 +30,8 @@ export type ProjectData = {
   id: string;
   date: string;
   title: string;
+  previewLink?: string;
+  repoLink?: string;
   main_ideia: string;
   execution: string;
   learned: string[];
@@ -34,6 +44,8 @@ export const projectData: ProjectData[] = [
     id: "1",
     date: "April 2023",
     title: "Portifolio",
+    previewLink: "https://portifolio-new-topaz.vercel.app/",
+    repoLink: "https://github.com/chicogborba/portifolioNew",
     main_ideia: `A portfolio website that utilizes a neubrutalist design to capture attention. 
     This React and TypeScript single-page application showcases my current tech stack and recent projects. 
     By highlighting my expertise and experience.`,
@@ -123,6 +135,8 @@ export const projectData: ProjectData[] = [
     id: "4",
     date: "April 2024",
     title: "3D Calculator",
+    previewLink: "https://three-js-3-d-calculator.vercel.app/",
+    repoLink: "https://github.com/chicogborba/ThreeJS3DCalculator",
     main_ideia: `Well, one of the first projects I ever did with HTML, CSS and JS
     was a calculator. So I thought it would be cool to start learning ThreeJS by creating 
     a functional 3D calculator.`,
@@ -155,5 +169,84 @@ export const projectData: ProjectData[] = [
       },
     ],
     exemple_img: CalculatorBanner,
+  },
+  {
+    id: "3",
+    date: "May 2024",
+    title: "Wave Function Collapse",
+    previewLink: "https://chicogborba.github.io/WaveFunctionCollapseJS/",
+    repoLink: "https://github.com/chicogborba/WaveFunctionCollapseJS",
+    main_ideia: `The initial idea was to build a version of the algorithm in pure JavaScript, HTML, and CSS based on the basic specification of the algorithm to create a more general execution of it. The final goal was to create a map generator that could always generate roads that connect.`,
+    execution: `The Wave Function Collapse (WFC) algorithm begins with an empty grid, where each square can represent multiple possibilities. When a square is "observed," it collapses into a specific state, thereby constraining the options available for its neighboring squares based on predefined rules. The algorithm employs the concept of entropy to determine which cell to collapse first, imposing restrictions on adjacent cells until the entire grid is filled consistently.
+
+This implementation was designed for user-friendly interaction, allowing users to click on squares to observe the algorithm in action. Once the core functionality was complete, I enhanced the HTML page with additional text and styling to create a more inviting and engaging user experience.
+
+`,
+    learned: [
+      "Principles of the Wave Function Collapse algorithm",
+      "Concepts of entropy and constraint propagation",
+      "Implementation of procedural generation algorithms in JavaScript",
+      "Information theory and its applications in computer science",
+    ],
+    used_techs: [
+      {
+        name: "JavaScript",
+        icon: <IoLogoJavascript className="w-full h-full" />,
+        used: "Main language used in the project implementation",
+      },
+      {
+        name: "HTML",
+        icon: <FaHtml5 className="w-full h-full" />,
+        used: "Used to create the user interface",
+      },
+      {
+        name: "CSS",
+        icon: <IoLogoCss3 className="w-full h-full" />,
+        used: "Used to create the styles of the user interface",
+      },
+    ],
+    exemple_img: WFCMain,
+  },
+  {
+    id: "5",
+    date: "2024",
+    title: "Hackathon AGES 2024",
+    main_ideia: `This project was developed during the Hackathon 2024 AGES PUCRS, where the central proposal was to create an innovative application that automates the planning of routes for autonomous drone flights, while integrating an advanced image recognition system to identify victims in emergency situations.`,
+    execution: `Given the theme "Technology in Disasters," our team designed an intuitive interface using the Leaflet library in React, enabling the creation of interactive maps and efficient route management. For the image recognition component, we utilized Python and the OpenCV library, allowing the application to automatically detect victims in critical scenarios. Additionally, we learned to use an AWS S3 bucket for storing images, which enhanced the application's functionality and scalability. The solution was crafted in less than 24h and was designed to facilitate user interaction and optimize disaster response processes.`,
+    learned: [
+      "Development of autonomous route for drones",
+      "Application of interactive mapping with Leaflet",
+      "Implementation of image recognition systems using OpenCV.",
+      "Utilization of AWS S3 for image storage.",
+      "Team collaboration in a competitive programming environment, enhancing teamwork skills.",
+    ],
+    used_techs: [
+      {
+        name: "React",
+        icon: <FaReact className="w-full h-full" />,
+        used: "The main framework used to build the user interface, providing an interactive experience.",
+      },
+      {
+        name: "Leaflet",
+        icon: <SiLeaflet className="w-full h-full" />,
+        used: "The library employed to create interactive maps, facilitating route planning.",
+      },
+      {
+        name: "Python",
+        icon: <FaPython className="w-full h-full" />,
+        used: "The language chosen for implementing image recognition, ensuring efficient processing.",
+      },
+      {
+        name: "OpenCV",
+        icon: <SiOpencv className="w-full h-full" />,
+        used: "The library used for image processing and automatic victim identification.",
+      },
+      {
+        name: "AWS S3",
+        icon: <FaAws className="w-full h-full" />,
+        used: "Used for storing images securely and efficiently.",
+      },
+    ],
+    exemple_img: ESMain,
   },
 ];
