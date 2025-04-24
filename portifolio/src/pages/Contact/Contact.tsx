@@ -6,28 +6,28 @@ import { contactData } from "./ContactData";
 
 const Contact = () => {
   return (
-    <div
-      className="
+      <div
+        className="
         flex flex-col gap-20
         items-center
         h-auto
         min-h-screen-header
         bg-[#22F2FF]
         p-16"
-    >
-      <TitleOutlined text="How to Reach Me?" color="salmon" />
-      <div className="flex flex-wrap gap-12 justify-center">
-        {contactData.map((item, index) => (
-          <ColorCard
-            key={index}
-            text={item.name}
-            icon={item.icon}
-            color={item.color}
-            onClick={item.onClick}
-          />
-        ))}
+      >
+        <TitleOutlined text="How to Reach Me?" color="salmon" />
+        <div className="flex flex-wrap gap-12 justify-center">
+          {contactData.map((item, index) => (
+            <ColorCard
+              key={index}
+              text={item.name}
+              icon={item.icon}
+              color={item.color}
+              onClick={item.onClick}
+            />
+          ))}
+        </div>
       </div>
-    </div>
   );
 };
 
